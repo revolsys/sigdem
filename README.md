@@ -63,7 +63,8 @@ maxY:     minX, minX + gridCelWidth, ..., maxX
 
 Grid cells are referenced using gridX in the range 0..gridWidth - 1 and gridY in the range 0..gridHeight - 1.
 
-Each grid cell contains the elevation (z-coordinate) as a scaled int value.
+Each grid cell contains the elevation (z-coordinate) as a scaled int value. NULL values are stored
+using the value -2<sup>31</sup>
 
 The map coordinates of each grid cell (x, y) are at the lowest left corner of the grid cell (other DEM
 formats use the centre).
